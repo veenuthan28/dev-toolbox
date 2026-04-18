@@ -1,0 +1,121 @@
+/* ============================================================
+   App — Layout & Tab Navigation
+   ============================================================ */
+
+/* Tab Navigation Bar */
+.tab-nav {
+  display: flex;
+  gap: var(--space-xs);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xs);
+  margin-bottom: var(--space-xl);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tab-nav::-webkit-scrollbar {
+  height: 0;
+}
+
+.tab-btn {
+  flex: 1;
+  min-width: max-content;
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--text-primary);
+  background: var(--bg-tertiary);
+}
+
+.tab-btn.active {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 2px 12px var(--accent-glow);
+}
+
+.tab-icon {
+  margin-right: 6px;
+}
+
+/* Tool Panels */
+.tool-panel {
+  display: none;
+  animation: fadeIn var(--transition-slow) ease;
+}
+
+.tool-panel.active {
+  display: block;
+}
+
+/* Panel Card (shared across all tools) */
+.panel-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-base);
+}
+
+.panel-header {
+  margin-bottom: var(--space-xl);
+}
+
+.panel-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin-bottom: var(--space-xs);
+}
+
+.panel-header p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: var(--space-2xl) 0 var(--space-lg);
+  color: var(--text-tertiary);
+  font-size: 13px;
+}
+
+.footer p {
+  margin-bottom: var(--space-xs);
+}
+
+.footer-credit {
+  font-size: 12px;
+  margin-top: var(--space-sm);
+}
+
+.footer a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .panel-card {
+    padding: var(--space-md);
+  }
+}

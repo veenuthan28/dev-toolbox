@@ -1,0 +1,35 @@
+{
+  "name": "dev-toolbox",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A collection of essential developer tools — CSS Box Shadow Generator, JSON Formatter, Regex Tester, and Color Converter. Built with Astro + React.",
+  "author": "",
+  "license": "MIT",
+  "keywords": [
+    "developer-tools",
+    "css-generator",
+    "json-formatter",
+    "regex-tester",
+    "color-converter",
+    "astro",
+    "react"
+  ],
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.16.0",
+    "@astrojs/react": "^3.6.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "highlight.js": "^11.9.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.0"
+  }
+}
